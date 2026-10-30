@@ -1,0 +1,45 @@
+name: Refresh GitHub repositories
+
+on:
+  schedule:
+    # Daily at 04:17 UTC. GitHub may delay scheduled jobs under load.
+    - cron: "17 4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-repos
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Fetch the latest repositories
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_USER: xlisrael
+        run: python3 tools/fetch-repos.py
+
+      - name: Commit the refreshed data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/repos.json data/repos.js
+          if git diff --cached --quiet; then
+            echo "Repositories are already up to date."
+          else
+            git commit -m "chore: refresh GitHub repositories"
+            git push
+          fi

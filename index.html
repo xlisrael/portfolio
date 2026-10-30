@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+    <title>Excel Israel — Security Tooling, Mobile Apps &amp; Research</title>
+    <meta
+      name="description"
+      content="Excel Israel is a developer from Taraba State, Nigeria. I build network intrusion detection tooling in Python, focused Android apps in Kotlin, and cross-platform apps with React Native and Node.js.">
+    <meta name="author" content="Excel Israel">
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" content="#eef1ef" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0f1613" media="(prefers-color-scheme: dark)">
+
+    <!-- TODO: replace https://example.com with your real domain before deploying. -->
+    <link rel="canonical" href="https://example.com/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Excel Israel">
+    <meta property="og:title" content="Excel Israel — Security Tooling, Mobile Apps &amp; Research">
+    <meta
+      property="og:description"
+      content="Developer from Taraba State, Nigeria. Intrusion detection tooling in Python, Android and React Native apps, Node.js and PostgreSQL backends, and research on crime control in Taraba State.">
+    <meta property="og:url" content="https://example.com/">
+    <meta property="og:image" content="https://example.com/assets/og.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Excel Israel — security tooling, mobile apps and research.">
+    <meta property="og:locale" content="en_NG">
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Excel Israel — Security Tooling, Mobile Apps &amp; Research">
+    <meta
+      name="twitter:description"
+      content="Developer from Taraba State, Nigeria. Intrusion detection tooling in Python, Android and React Native apps, Node.js and PostgreSQL backends, and research on crime control in Taraba State.">
+    <meta name="twitter:image" content="https://example.com/assets/og.png">
+
+    <!-- Icons -->
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+    <link rel="manifest" href="assets/site.webmanifest">
+    <meta name="apple-mobile-web-app-title" content="Excel">
+
+    <!-- Fonts: preloaded, then applied without blocking the first paint -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&display=swap"
+      id="font-css"
+    >
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&display=swap"
+      media="print"
+      onload="this.media='all'; this.onload=null"
+    >
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&display=swap"
+      >
+    </noscript>
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Set the saved theme before first paint so there is no flash of the wrong theme. -->
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem("theme");
+          if (saved === "light" || saved === "dark") {
+            document.documentElement.setAttribute("data-theme", saved);
+          }
+        } catch (e) {
+          /* localStorage unavailable (private mode) — fall back to system theme */
+        }
+      })();
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Excel Israel",
+        "alternateName": "Excel",
+        "url": "https://example.com/",
+        "email": "mailto:israelexcel2006@gmail.com",
+        "telephone": "+2349067885488",
+        "jobTitle": "Security and Mobile Developer",
+        "description": "Developer from Taraba State, Nigeria, working on network security tooling, mobile applications and academic research.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Taraba State",
+          "addressCountry": "NG"
+        },
+        "knowsAbout": [
+          "Network security",
+          "Intrusion detection",
+          "Machine learning",
+          "Android",
+          "Kotlin",
+          "React",
+          "React Native",
+          "JavaScript",
+          "TypeScript",
+          "Node.js",
+          "PostgreSQL",
+          "Python"
+        ],
+        "sameAs": [
+          "https://github.com/xlisrael",
+          "https://www.linkedin.com/in/excel-israel-00a9542b8"
+        ]
+      }
+    </script>
+  </head>
+
+  <body>
+    <span id="top" aria-hidden="true"></span>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="topbar">
+      <div class="topbar-inner">
+        <span class="prompt" aria-hidden="true">excel@dev:~$</span>
+
+        <div class="links">
+          <nav aria-label="Sections">
+            <a href="index.html#work" data-section="work">Work</a>
+            <a href="index.html#research" data-section="research">Research</a>
+            <a href="index.html#stack" data-section="stack">Stack</a>
+            <a href="index.html#about" data-section="about">About</a>
+            <a class="nav-cta" href="contact.html" data-section="contact">Contact</a>
+          </nav>
+
+          <button
+            class="icon-btn"
+            id="theme-toggle"
+            type="button"
+            aria-label="Switch to dark theme"
+            title="Toggle colour theme"
+          >
+            <svg
+              class="icon-moon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+            </svg>
+            <svg
+              class="icon-sun"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <circle cx="12" cy="12" r="4" />
+              <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="wrap">
+      <main id="main">
+        <div class="hero">
+          <p class="kicker"><span class="pulse" aria-hidden="true"></span>Open to internships &amp; collaborations</p>
+
+          <h1 id="typewriter">Excel</h1>
+
+          <p class="lede">
+            I build <strong>security tooling</strong> and focused <strong>mobile software</strong>, and I write
+            research on how communities deal with crime. I like projects where the system has to be correct
+            before it can be clever.
+          </p>
+
+          <dl class="meta">
+            <div><dt>Focus</dt><dd>network security, Android, React Native</dd></div>
+            <div><dt>Languages</dt><dd>Python, Kotlin, TypeScript, JavaScript</dd></div>
+            <div><dt>Based in</dt><dd>Taraba State, Nigeria</dd></div>
+            <div><dt>Works on</dt><dd>Ubuntu</dd></div>
+          </dl>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="contact.html">Get in touch</a>
+            <a class="btn" href="index.html#work">See the work</a>
+          </div>
+        </div>
+
+        <section id="work" aria-labelledby="work-heading">
+          <h2 id="work-heading"><span class="num">01</span>Selected work</h2>
+
+          <article class="project">
+            <div>
+              <p class="status">
+                <span class="idx">01</span>
+                <span class="dot" aria-hidden="true"></span>
+                Academic project
+              </p>
+              <h3>Network Intrusion Detection System</h3>
+              <p>
+                A hybrid detector that watches network traffic and flags attacks two ways: known signatures and
+                statistical anomalies. A packet capture layer feeds a deep packet inspector, a signature engine and
+                a machine-learning anomaly model, and a dashboard reports what they find.
+              </p>
+              <p>
+                It ships with its own attack generator, so detection can be tested against traffic I control instead
+                of guessing.
+              </p>
+              <ul class="tags">
+                <li>Python</li>
+                <li>scikit-learn</li>
+                <li>Packet capture</li>
+                <li>Anomaly detection</li>
+              </ul>
+            </div>
+
+            <figure class="evidence">
+              <figcaption class="cap">Modules · what each one does</figcaption>
+              <div class="row"><span>packet_capture</span><span>reads traffic off the wire</span></div>
+              <div class="row"><span>deep_packet_inspector</span><span>opens payloads</span></div>
+              <div class="row"><span class="hit">signature_engine</span><span class="hit">matches known attacks</span></div>
+              <div class="row"><span class="ok">ml_anomaly_detector</span><span class="ok">scores unusual flows</span></div>
+              <div class="row"><span>attack_generator</span><span>produces test attacks</span></div>
+              <div class="row"><span>ids_main_enhanced</span><span>runs it all, drives dashboard</span></div>
+            </figure>
+          </article>
+
+          <article class="project">
+            <div>
+              <p class="status wip">
+                <span class="idx">02</span>
+                <span class="dot" aria-hidden="true"></span>
+                In development
+              </p>
+              <h3>Focus Lock</h3>
+              <p>
+                A deliberately minimal Android app. Set an end time and the phone locks down until it passes. Calls,
+                texts and the torch still work, and a music app can be allowed. Social media apps can never be added
+                to the allowed list, and that rule is built in, not a setting.
+              </p>
+              <ul class="tags">
+                <li>Android</li>
+                <li>Kotlin</li>
+                <li>Jetpack Compose</li>
+              </ul>
+            </div>
+
+            <figure class="evidence">
+              <figcaption class="cap">Allow list · the rules</figcaption>
+              <dl class="rules">
+                <div><dt>Phone calls</dt><dd class="yes">always</dd></div>
+                <div><dt>Text messages</dt><dd class="yes">always</dd></div>
+                <div><dt>Torch</dt><dd class="yes">always</dd></div>
+                <div><dt>Music app</dt><dd class="yes">optional</dd></div>
+                <div><dt>Social media</dt><dd class="no">never</dd></div>
+              </dl>
+            </figure>
+          </article>
+
+          <div class="repos-block" aria-labelledby="repos-heading">
+            <div class="repos-head">
+              <h3 id="repos-heading">Open source</h3>
+              <a class="repos-all" href="https://github.com/xlisrael" rel="me noopener" target="_blank">
+                All repositories <span aria-hidden="true">→</span>
+              </a>
+            </div>
+            <p class="repos-note">Pulled from GitHub and refreshed automatically.</p>
+            <div class="repos" id="repo-grid" data-repos>
+              <p class="repos-status" data-repos-status>
+                Browse the repositories on <a href="https://github.com/xlisrael">GitHub</a>.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section id="research" aria-labelledby="research-heading">
+          <h2 id="research-heading"><span class="num">02</span>Research and writing</h2>
+
+          <article class="project">
+            <div>
+              <p class="status">
+                <span class="idx">01</span>
+                <span class="dot" aria-hidden="true"></span>
+                Academic study
+              </p>
+              <h3>Drug abuse and crime control in Taraba State</h3>
+              <p>
+                A research study on the link between drug abuse and crime in Taraba State, and on how it can be
+                controlled. It sits alongside my technical work: both start from a system, find where it fails, and
+                ask what would fix it.
+              </p>
+              <ul class="tags">
+                <li>Research design</li>
+                <li>Academic writing</li>
+                <li>Nigeria</li>
+              </ul>
+            </div>
+
+            <figure class="evidence">
+              <figcaption class="cap">Study · at a glance</figcaption>
+              <div class="row"><span>Subject</span><span>drug abuse and crime</span></div>
+              <div class="row"><span>Scope</span><span>Taraba State, Nigeria</span></div>
+              <div class="row"><span>Question</span><span>what would control it</span></div>
+              <div class="row"><span>Form</span><span>academic research</span></div>
+            </figure>
+          </article>
+        </section>
+
+        <section id="stack" aria-labelledby="stack-heading">
+          <h2 id="stack-heading"><span class="num">03</span>Stack</h2>
+
+          <p class="section-intro">
+            The tools I reach for, and where each one fits in the work.
+          </p>
+
+          <div class="stack">
+            <div>
+              <h3>Languages</h3>
+              <p>The core languages I write in, front to back.</p>
+              <ul class="tags">
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>TypeScript</li>
+                <li>Kotlin</li>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>SQL</li>
+                <li>Bash</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3>Frontend</h3>
+              <p>Interfaces that stay usable and accessible on any screen.</p>
+              <ul class="tags">
+                <li>React</li>
+                <li>React Native</li>
+                <li>Tailwind CSS</li>
+                <li>Bootstrap</li>
+                <li>Responsive design</li>
+                <li>Accessibility</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3>Backend &amp; data</h3>
+              <p>APIs, authentication and the databases behind them.</p>
+              <ul class="tags">
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>REST APIs</li>
+                <li>PostgreSQL</li>
+                <li>MySQL</li>
+                <li>OAuth 2.0</li>
+                <li>Supabase</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3>Mobile</h3>
+              <p>Cross-platform builds, and native Android when it matters.</p>
+              <ul class="tags">
+                <li>React Native</li>
+                <li>Expo</li>
+                <li>Android</li>
+                <li>Kotlin</li>
+                <li>Jetpack Compose</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3>Tools &amp; platforms</h3>
+              <p>Where the work gets written, shipped and hosted.</p>
+              <ul class="tags">
+                <li>Git</li>
+                <li>GitHub</li>
+                <li>VS Code</li>
+                <li>Ubuntu</li>
+                <li>Vercel</li>
+                <li>Render</li>
+                <li>Supabase</li>
+                <li>Postman</li>
+                <li>Google Cloud</li>
+                <li>Chrome DevTools</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3>How I build</h3>
+              <p>The habits that keep the work honest.</p>
+              <ul class="tags">
+                <li>Git &amp; GitHub</li>
+                <li>Version control</li>
+                <li>Responsive UI</li>
+                <li>Unit testing</li>
+                <li>CI/CD</li>
+                <li>Technical writing</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section id="about" aria-labelledby="about-heading">
+          <h2 id="about-heading"><span class="num">04</span>About</h2>
+
+          <div class="about">
+            <div>
+              <h3>Background</h3>
+              <p>
+                I am a developer from Taraba State, Nigeria. My work sits in three places: network security tooling,
+                mobile software, and academic research. They are different subjects but the same method — look at a
+                system, find where it fails, and ask what would fix it.
+              </p>
+              <p>
+                I work on Ubuntu, with the terminal as the main tool. Most of what I build starts as a script, becomes
+                a module, and only then gets an interface.
+              </p>
+              <!-- TODO: add your institution and field of study here. -->
+            </div>
+
+            <div>
+              <h3>How I work</h3>
+              <ul class="ticks">
+                <li>Correctness first — a feature that is wrong is not a feature.</li>
+                <li>Test against traffic or data I control, not assumptions.</li>
+                <li>Small commits, clear messages, work that can be reviewed.</li>
+                <li>Write the reasoning down; the code is only half of it.</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3>Currently</h3>
+              <ul class="ticks">
+                <li>Building <strong>Focus Lock</strong> in Kotlin and Jetpack Compose.</li>
+                <li>Working on the network intrusion detection system.</li>
+                <li>Writing up research on drug abuse and crime control in Taraba State.</li>
+                <li>Sharpening my React Native and Node.js work.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section id="contact" class="contact" aria-labelledby="contact-heading">
+          <h2 id="contact-heading"><span class="num">05</span>Contact</h2>
+
+          <p class="big">Open to internships, collaborations and good problems.</p>
+
+          <ul class="contact-list">
+            <li>
+              <span class="key">email</span>
+              <span class="val"><a id="email-link" href="mailto:israelexcel2006@gmail.com">israelexcel2006@gmail.com</a></span>
+              <button
+                class="copy-btn"
+                type="button"
+                data-copy-from="#email-link"
+                aria-label="Copy email address to clipboard"
+                aria-live="polite"
+              >
+                Copy
+              </button>
+            </li>
+            <li>
+              <span class="key">phone</span>
+              <span class="val"><a id="phone-link" href="tel:+2349067885488">+234&nbsp;906&nbsp;788&nbsp;5488</a></span>
+              <button
+                class="copy-btn"
+                type="button"
+                data-copy-from="#phone-link"
+                aria-label="Copy phone number to clipboard"
+                aria-live="polite"
+              >
+                Copy
+              </button>
+            </li>
+            <li>
+              <span class="key">location</span>
+              <span class="val">Taraba State, Nigeria</span>
+            </li>
+            <li>
+              <span class="key">github</span>
+              <span class="val">
+                <a href="https://github.com/xlisrael" rel="me noopener" target="_blank">github.com/xlisrael</a>
+              </span>
+            </li>
+          </ul>
+
+          <p class="contact-more">
+            Full details, socials and a message form live on the
+            <a href="contact.html">contact page</a>.
+          </p>
+        </section>
+      </main>
+
+      <footer>
+        <span>© <span id="year">2026</span> Excel Israel · Built in Nigeria</span>
+        <span class="clock"><span id="clock-time">--:--</span> WAT · Nigeria</span>
+        <a class="to-top" href="#top">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <path d="M12 19V5M5 12l7-7 7 7" />
+          </svg>
+          Back to top
+        </a>
+      </footer>
+    </div>
+
+    <script src="js/main.js" defer></script>
+    <script src="data/repos.js" defer></script>
+    <script src="js/repos.js" defer></script>
+  </body>
+</html>
