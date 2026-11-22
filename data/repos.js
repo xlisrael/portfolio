@@ -58,15 +58,15 @@ window.PORTFOLIO_REPOS = {
       "pushed_at": "2026-08-12T05:39:45Z"
     },
     {
-      "name": "dotnetmvc",
+      "name": "OIBSIP",
       "description": "",
-      "url": "https://github.com/xlisrael/dotnetmvc",
+      "url": "https://github.com/xlisrael/OIBSIP",
       "homepage": "",
       "language": "JavaScript",
       "stars": 0,
       "forks": 0,
       "topics": [],
-      "pushed_at": "2026-08-03T13:06:18Z"
+      "pushed_at": "2026-11-22T00:08:30Z"
     }
   ]
 };
